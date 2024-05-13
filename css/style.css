@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --clr-white: #ffffff;
+  --clr-neutral-600: #525252;
+  --clr-neutral-900: #171717;
+  --clr-bg-gradient: linear-gradient(#f9fafb, #d2d6db);
+
+  --txt-sm: .875rem;
+  --txt-lg: 1.125rem;
+}
+
+body {
+  font-family: "Noto Sans", sans-serif;
+  background: var(--clr-bg-gradient);
+  min-height: 100vh;
+}
+
+.container {
+  padding: 0 32px;
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  max-width: 340px;
+  margin-top: 200px;
+  padding: 24px;
+  background-color: var(--clr-white);
+  border-radius: 8px;
+  border: 1px solid #e5e5e5;
+  box-shadow: 0 1px 5px #d2d6db;
+}
+
+.profile-header {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.profile-img {
+  width: 48px;
+  display: block;
+}
+
+.name {
+  font-size: var(--txt-lg);
+  font-weight: 600;
+}
+
+.handle {
+  font-size: var(--txt-sm);
+  color: var(--clr-neutral-600);
+}
+
+.message {
+  color: var(--clr-neutral-600);
+}
+
+@media only screen and (width:375px) {
+  .container {
+    max-width: 100%;
+    padding: 0 16px;
+  }
+}
+
+@media only screen and (width: 768px) {
+  .container {
+    max-width: 100%;
+  }
+}
+
+@media only screen and (width: 1440px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+
